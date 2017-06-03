@@ -154,10 +154,10 @@ func (s *Skasaha) SyncCharacters() error {
 	var (
 		err error
 
-		scrapedCharacters  []*scraper.Character
+		scrapedCharacters []*scraper.Character
 
 		characters = make([]gbf.Character, 0)
-		log    = s.logger()
+		log        = s.logger()
 	)
 
 	log.Print("synchronizing characters")
@@ -169,7 +169,7 @@ func (s *Skasaha) SyncCharacters() error {
 
 	for _, basicChar := range scrapedCharacters {
 		var (
-			char   gbf.Character
+			char    gbf.Character
 			details *scraper.CharacterDetails
 		)
 
@@ -322,7 +322,7 @@ func (s *Skasaha) SyncCharacters() error {
 			}
 		} else {
 			em.Thumbnail = &discordgo.MessageEmbedThumbnail{
-				URL:    char.ImageSpriteURL,
+				URL: char.ImageSpriteURL,
 			}
 		}
 
@@ -350,56 +350,56 @@ func (s *Skasaha) SyncCharacters() error {
 
 		if char.Element != gbf.UnknownElement {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Element",
-				Value: char.Element.String(),
+				Name:   "Element",
+				Value:  char.Element.String(),
 				Inline: true,
 			})
 		}
 
 		if char.Style != gbf.UnknownStyle {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Style",
-				Value: char.Style.String(),
+				Name:   "Style",
+				Value:  char.Style.String(),
 				Inline: true,
 			})
 		}
 
 		if char.Race != gbf.UnknownRace {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Race",
-				Value: char.Race.String(),
+				Name:   "Race",
+				Value:  char.Race.String(),
 				Inline: true,
 			})
 		}
 
 		if char.Sex != gbf.UnknownSex {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Sex",
-				Value: char.Sex.String(),
+				Name:   "Sex",
+				Value:  char.Sex.String(),
 				Inline: true,
 			})
 		}
 
 		if char.Stars > 0 {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Stars",
-				Value: strconv.Itoa(char.Stars),
+				Name:   "Stars",
+				Value:  strconv.Itoa(char.Stars),
 				Inline: true,
 			})
 		}
 
 		if char.HP > 0 {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "HP",
-				Value: strconv.Itoa(char.HP),
+				Name:   "HP",
+				Value:  strconv.Itoa(char.HP),
 				Inline: true,
 			})
 		}
 
 		if char.Attack > 0 {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Attack",
-				Value: strconv.Itoa(char.Attack),
+				Name:   "Attack",
+				Value:  strconv.Itoa(char.Attack),
 				Inline: true,
 			})
 		}
@@ -412,15 +412,15 @@ func (s *Skasaha) SyncCharacters() error {
 		}
 
 		em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-			Name: "Extended Mastery",
-			Value: extendedMasteryStr,
+			Name:   "Extended Mastery",
+			Value:  extendedMasteryStr,
 			Inline: true,
 		})
 
 		if char.WeaponType != gbf.UnknownWeaponType {
 			em.Fields = append(em.Fields, &discordgo.MessageEmbedField{
-				Name: "Weapon Type",
-				Value: char.WeaponType.String(),
+				Name:   "Weapon Type",
+				Value:  char.WeaponType.String(),
 				Inline: true,
 			})
 		}

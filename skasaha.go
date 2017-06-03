@@ -13,15 +13,15 @@ type Skasaha struct {
 	Token    string
 	EmojiDir string
 
-	Logger Logger
-	Events []gbf.Event
+	Logger     Logger
+	Events     []gbf.Event
 	Characters []gbf.Character
 
 	session *discordgo.Session
 
-	index        *Index
-	embeds       map[Snowflake]*discordgo.MessageEmbed
-	embedsEvents []Snowflake
+	index            *Index
+	embeds           map[Snowflake]*discordgo.MessageEmbed
+	embedsEvents     []Snowflake
 	embedsCharacters []Snowflake
 }
 
