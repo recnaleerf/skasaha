@@ -11,10 +11,9 @@ the proprietary [risend/vampy][] bot.
 
 * Emoji from [risend/vampy][].
 * Event list.
-
-## WIP
-
-* Character lookup.
+* Free form search.
+  * Events
+  * Characters
 
 ## Install
 
@@ -29,7 +28,8 @@ Create a file `skasaha.json` with this content:
 ```json
 {
   "token": "YOUR_TOKEN",
-  "prefix": "!"
+  "prefix": "!",
+  "emoji_dir": "./media/emoji"
 }
 ```
 
@@ -45,8 +45,8 @@ skasaha
 |---|---|---|
 | `help` || Display help. |
 | `events` || List of events. |
-| `emo`, `emoji` | `name` | Displays emoji `name`. |
-| `s`, `search` | Any text. | Searches for something. |
+| `emo`, `emoji` | `name` | Display emoji `name`. |
+| `s`, `search` | Free-form text. | Search for something. |
 
 As a special case, emoji have a short form. For example, if you want to
 display the emoji `stare`, and your prefix is `!`, then you can do `!!stare`.
