@@ -11,6 +11,9 @@ the proprietary [risend/vampy][] bot.
 
 * Emoji from [risend/vampy][].
 * Event list.
+
+## WIP
+
 * Character lookup.
 
 ## Install
@@ -48,6 +51,10 @@ skasaha
 As a special case, emoji have a short form. For example, if you want to
 display the emoji `stare`, and your prefix is `!`, then you can do `!!stare`.
 If your prefix is `$` then it becomes `$$stare`, and so on.
+
+## Contact
+
+* [Discord](https://discord.gg/E7rky88)
 
 ## License
 
