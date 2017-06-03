@@ -12,6 +12,7 @@ import (
 
 const (
 	ConfigFile = "skasaha.json"
+	IndexTTL   = 24 * time.Hour
 )
 
 func main() {
@@ -58,7 +59,7 @@ func main() {
 	go func() {
 		for {
 			select {
-			case <-time.After(1 * time.Hour):
+			case <-time.After(IndexTTL):
 				err = s.Sync()
 				if err != nil {
 					log.Print(err)
