@@ -15,12 +15,14 @@ type Skasaha struct {
 
 	Logger Logger
 	Events []gbf.Event
+	Characters []gbf.Character
 
 	session *discordgo.Session
 
 	index        *Index
 	embeds       map[Snowflake]*discordgo.MessageEmbed
 	embedsEvents []Snowflake
+	embedsCharacters []Snowflake
 }
 
 func (s *Skasaha) initEmbeds() {
