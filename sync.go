@@ -316,13 +316,13 @@ func (s *Skasaha) SyncCharacters() error {
 
 		if char.ImageSpriteURL == "" {
 			em.Thumbnail = &discordgo.MessageEmbedThumbnail{
-				URL:    char.ImageSpriteURL,
-			}
-		} else {
-			em.Thumbnail = &discordgo.MessageEmbedThumbnail{
 				URL:    GBFLogoImageURL,
 				Width:  GBFLogoImageWidth,
 				Height: GBFLogoImageHeight,
+			}
+		} else {
+			em.Thumbnail = &discordgo.MessageEmbedThumbnail{
+				URL:    char.ImageSpriteURL,
 			}
 		}
 
