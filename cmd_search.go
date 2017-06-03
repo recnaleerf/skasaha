@@ -7,7 +7,7 @@ import (
 	"github.com/bwmarrin/discordgo"
 )
 
-// cmdEvents handles the events command.
+// cmdEvents handles the search command.
 func (s *Skasaha) cmdSearch(ds *discordgo.Session, m *discordgo.MessageCreate, query string) error {
 	var (
 		err error
