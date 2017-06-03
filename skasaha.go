@@ -86,6 +86,11 @@ func (s *Skasaha) OnMessageCreate(ds *discordgo.Session, m *discordgo.MessageCre
 	log.Printf("head=%#v tail=%#v", head, tail)
 
 	switch head {
+	case "h":
+		fallthrough
+	case "help":
+		err = s.cmdHelp(ds, m, tail)
+
 	case "s":
 		fallthrough
 	case "search":

@@ -40,6 +40,7 @@ skasaha
 
 | Command | Arguments | Description |
 |---|---|---|
+| `help` || Display help. |
 | `events` || List of events. |
 | `emo`, `emoji` | `name` | Displays emoji `name`. |
 | `s`, `search` | Any text. | Searches for something. |
