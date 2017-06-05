@@ -1,19 +1,29 @@
-# skasaha
+# Skasaha (Discord)
 
 Granblue Fantasy bot for Discord.
 
-This bot exists as a free and open source alternative to
-the proprietary [risend/vampy][] bot.
+## Invite
 
-[risend/vampy]: <https://risend.github.io/vampy/>
+There is no invite link for this bot, and there will never be.
+
+Skasaha is only available in source code form.
+
+If other people run Skasaha on their servers and provide public invites,
+that's their problem.
 
 ## Features
 
-* Emoji from [risend/vampy][].
+* Emoji from [risend/vampy](https://risend.github.io/vampy/).
 * Event list.
 * Free form search.
   * Events
   * Characters
+
+### Policy
+
+Every feature must be directly related to Granblue Fantasy.
+
+That means generic features will not be implemented.
 
 ## Install
 
@@ -38,6 +48,8 @@ Create a file `skasaha.json` with this content:
 ```bash
 skasaha
 ```
+
+(`skasaha.json` must be in the working directory)
 
 ## Commands
 
